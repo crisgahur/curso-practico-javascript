@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos - Curso practico de JS</title>
+</head>
+<body>
+    <header>
+    <h1>Porcentajes y descuentos</h1>
+    <p>Este es el segundo taller del curso practico de JS</p>
+    </header>
+
+    <section>
+        <h2>Calcula el precio a pagar en tus productos con descuento</h2>
+        <form>
+            <label for = "InputPrice"> Escribe el precio de tu producto </label>
+            <input id = "InputPrice" type="number"/> <!--Lo que estamos haciendo es conectar el input con el label, le asignamos un ID y con el FOR conectamos ambos-->
+
+            
+            <br/><label for = "InputCoupon"> Escribe el cupon de tu producto </label>
+            <input id = "InputCoupon" type="text"/>
+            <button type ="button" onclick="ButtonPriceCoupon()"> Calcular el precio con descuento </button> <!--Se le añado el type = button para que al presionar el boton no se borre la información dejada en el recuadro por el usuario y el onclick para que se dispare una función al momento de que le den click al boton-->
+            
+
+            <p id ="ResultPrice"></p>
+        </form>
+    </section>
+    
+    <script src = "descuentos.js"></script>
+    
+</body>
+</html>
